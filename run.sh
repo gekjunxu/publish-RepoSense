@@ -16,4 +16,4 @@
 ## Examples of other valid options; For more, please view the user guide
 ### java -jar RepoSense.jar --repos https://github.com/reposense/RepoSense.git
 
-java -jar RepoSense.jar
+java -jar RepoSense.jar --repos https://github.com/gekjunxu/ip.git --since 1/1/2025
