@@ -1,17 +1,21 @@
-Jul 18, 2025 5:28:24 AM reposense.system.LogsManager addFileHandler
+Jul 18, 2025 5:29:06 AM reposense.system.LogsManager addFileHandler
 INFO: Log temp folder has been successfully created
-Jul 18, 2025 5:28:24 AM reposense.parser.ReportConfigYamlParser parse
+Jul 18, 2025 5:29:06 AM reposense.parser.ReportConfigYamlParser parse
 INFO: Parsing report-config.yaml file...
-Jul 18, 2025 5:28:24 AM reposense.parser.ArgsParser addReportConfigToBuilder
+Jul 18, 2025 5:29:06 AM reposense.parser.ArgsParser addReportConfigToBuilder
 WARNING: Error parsing report-config.yaml: ./config/report-config.yaml (No such file or directory)
 ./config/report-config.yaml Ignoring the report config provided.
-Jul 18, 2025 5:28:24 AM reposense.parser.BlurbMarkdownParser parse
+Jul 18, 2025 5:29:06 AM reposense.parser.BlurbMarkdownParser parse
 INFO: Parsing blurbs...
-Jul 18, 2025 5:28:24 AM reposense.parser.BlurbMarkdownParser parse
+Jul 18, 2025 5:29:06 AM reposense.parser.BlurbMarkdownParser parse
 INFO: Blurbs parsed successfully!
-Jul 18, 2025 5:28:24 AM reposense.parser.CsvParser validateHeader
+Jul 18, 2025 5:29:06 AM reposense.parser.BlurbMarkdownParser parse
+INFO: Parsing blurbs...
+Jul 18, 2025 5:29:06 AM reposense.parser.BlurbMarkdownParser parse
+INFO: Blurbs parsed successfully!
+Jul 18, 2025 5:29:06 AM reposense.parser.CsvParser validateHeader
 INFO: Parsed header of CSV file, repo-config.csv, and recognized columns: Ignore Standalone Config,  Repository's Location,  Skip Ignored File Analysis,  Branch,  Shallow Cloning,  File formats,  Ignore Glob List,  Ignore Authors List,  Find Previous Authors,  File Size Limit,  Ignore File Size Limit,  Ignore Commits List
-Jul 18, 2025 5:28:24 AM reposense.git.GitConfig getGlobalGitLfsConfig
+Jul 18, 2025 5:29:06 AM reposense.git.GitConfig getGlobalGitLfsConfig
 WARNING: Could not get global git lfs config
 java.lang.RuntimeException: reposense.system.CommandRunnerProcessException: Error returned from command git config --global --list on path . :
 fatal: unable to read config file '/home/runner/.gitconfig': No such file or directory
@@ -27,27 +31,27 @@ fatal: unable to read config file '/home/runner/.gitconfig': No such file or dir
 	at reposense.system.CommandRunner.runCommand(CommandRunner.java:21)
 	... 3 more
 
-Jul 18, 2025 5:28:25 AM reposense.report.RepoCloner spawnCloneProcess
+Jul 18, 2025 5:29:06 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/gekjunxu/ip.git...
-Jul 18, 2025 5:28:25 AM reposense.report.RepoCloner waitForCloneProcess
+Jul 18, 2025 5:29:06 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/gekjunxu/ip.git to complete...
-Jul 18, 2025 5:28:25 AM reposense.report.RepoCloner waitForCloneProcess
+Jul 18, 2025 5:29:07 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/gekjunxu/ip.git completed!
-Jul 18, 2025 5:28:25 AM reposense.report.ReportGenerator analyzeRepos
+Jul 18, 2025 5:29:07 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [1/1] Analyzing https://github.com/gekjunxu/ip.git (master)...
-Jul 18, 2025 5:28:25 AM reposense.report.ReportGenerator updateRepoConfig
+Jul 18, 2025 5:29:07 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/gekjunxu/ip.git (master) does not contain a standalone config file.
-Jul 18, 2025 5:28:25 AM reposense.report.ReportGenerator updateAuthorList
+Jul 18, 2025 5:29:07 AM reposense.report.ReportGenerator updateAuthorList
 INFO: https://github.com/gekjunxu/ip.git (master) has no authors specified, using all authors by default.
-Jul 18, 2025 5:28:25 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Jul 18, 2025 5:29:07 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/gekjunxu/ip.git (master)...
-Jul 18, 2025 5:28:25 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Jul 18, 2025 5:29:07 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/gekjunxu/ip.git (master)...
-Jul 18, 2025 5:28:25 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Jul 18, 2025 5:29:07 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/gekjunxu/ip.git (master)...
-Jul 18, 2025 5:28:25 AM reposense.report.ReportGenerator analyzeRepo
+Jul 18, 2025 5:29:07 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/gekjunxu/ip.git (master) completed!
-Jul 18, 2025 5:28:25 AM reposense.report.ReportGenerator generateReposReport
+Jul 18, 2025 5:29:07 AM reposense.report.ReportGenerator generateReposReport
 INFO: The report is generated at /home/runner/work/publish-RepoSense/publish-RepoSense/reposense-report
-Jul 18, 2025 5:28:25 AM reposense.RepoSense main
-INFO: Elapsed processing time: 1.11 second(s)
+Jul 18, 2025 5:29:07 AM reposense.RepoSense main
+INFO: Elapsed processing time: 1.28 second(s)
