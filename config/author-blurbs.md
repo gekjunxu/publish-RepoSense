@@ -1,3 +1,3 @@
 gekjunxu
-Test author blurb
+Test author-blurb.md
 <!--author-->
