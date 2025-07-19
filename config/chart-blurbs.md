@@ -1,3 +1,3 @@
 https://github.com/gekjunxu/ip/tree/master|gekjunxu
-This is a chart blurb testing
+Testing chart-blurbs.md
 <!--chart-->
